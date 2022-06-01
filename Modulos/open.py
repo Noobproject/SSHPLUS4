@@ -9,12 +9,12 @@ try:
    PORT = int(sys.argv[1])
 except:
    PORT = 8080
-PASS = ''
-BUFLEN = 8196 * 8
-TIMEOUT = 60
-MSG = 'OpenVPN'
-DEFAULT_HOST = '0.0.0.0:1194'
-RESPONSE = "HTTP/1.1 101 " + str(MSG) + "\r\n\r\n"
+   PASS = ''
+   BUFLEN = 8196 * 8
+   TIMEOUT = 60
+   MSG = 'OpenVPN'
+   DEFAULT_HOST = '0.0.0.0:1194'
+   RESPONSE = "HTTP/1.1 101 " + str(MSG) + "\r\n\r\n"
 
 class Server(threading.Thread):
     def __init__(self, host, port):
@@ -238,3 +238,4 @@ def main(host=IP, port=PORT):
             break
 if __name__ == '__main__':
     main()
+fi
