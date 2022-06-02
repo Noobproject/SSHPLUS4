@@ -62,7 +62,7 @@ fun_atts () {
 
   [[ -e /tmp/att ]] && rm /tmp/att
 
-	wget -c -P /home https://raw.githubusercontent.com/Noobproject/SSHPLUS4/Install/versao
+	wget -c -P /home https://raw.githubusercontent.com/Noobproject/SSHPLUS4/main/Install/versao
 
 	[[ -f "/home/versao" ]] && mv /home/versao /tmp/att
 
